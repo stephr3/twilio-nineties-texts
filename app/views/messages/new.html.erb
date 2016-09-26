@@ -1,0 +1,11 @@
+<h1>Send a Dope Message!</h1>
+<%= form_for @message do |f| %>
+  <%= f.label :to %>
+  <%= f.text_field :to %>
+  <%= f.label :from %>
+  <%= f.text_field :from %>
+  <%= f.label :media_url, '(Optional) Send a fly gif, png, or jpeg image URL' %>
+  <%= f.text_field :media_url %>
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+<% end %>
