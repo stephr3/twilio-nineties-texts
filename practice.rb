@@ -17,7 +17,7 @@ response = RestClient::Request.new(
   ).execute
 
 
-  respons = RestClient::Request.new(
+  response = RestClient::Request.new(
   :method => :get,
   :url => 'https://api.twilio.com/2010-04-01/Accounts/AC3a77e89ec89dadb7ab5426f5ebd808a8/Messages.json',
       :user => 'AC3a77e89ec89dadb7ab5426f5ebd808a8',
@@ -33,3 +33,7 @@ class Message
     @status = attributes['status']
   end
 end
+
+parsed_response = JSON.parse(response)
+messages_data = parsed_response['messages']
+messages = messages_data.map { |data| Message.new(data) }

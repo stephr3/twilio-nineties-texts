@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
   def show
     @message = Message.find(params[:id])
   end
-  
+
   def new
     @message = Message.new
   end
@@ -23,7 +23,7 @@ class MessagesController < ApplicationController
 
 private
 
-  def mesage_params
+  def message_params
     params.require(:message).permit(:to, :from, :body, :media_url)
   end
 end

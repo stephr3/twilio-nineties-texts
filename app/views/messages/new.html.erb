@@ -1,4 +1,12 @@
 <h1>Send a Dope Message!</h1>
+<% if @message.errors.any? %>
+  <p>Oh snap! Something went wack. Your bad.</p>
+  <ul>
+    <% @message.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
 <%= form_for @message do |f| %>
   <%= f.label :to %>
   <%= f.text_field :to %>
@@ -8,4 +16,5 @@
   <%= f.text_field :media_url %>
   <%= f.label :body %>
   <%= f.text_field :body %>
+  <%= f.submit %>
 <% end %>
