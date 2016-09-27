@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twilio.com/2010-04-01/Accounts/<twilio account sid>/Messages.json
+    body:
+      encoding: UTF-8
+      string: Body=You+so+fly%21+From%3A+Sponge+Bob&MediaUrl=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FYQdNtNfM4l5p6%2Fgiphy.gif&To=3609034504&From=9713402576
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.2.0 x86_64) ruby/2.2.4p230
+      Content-Length:
+      - '142'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twilio.com
+      Authorization:
+      - Basic QUMzYTc3ZTg5ZWM4OWRhZGI3YWI1NDI2ZjVlYmQ4MDhhODphZmEwZDUxZGYyMTE1NjIyZDExMGQzMDU2NDRlZmQ5OQ==
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 27 Sep 2016 23:41:18 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
+      Twilio-Request-Duration:
+      - '0.239'
+      Twilio-Request-Id:
+      - RQacf61ec94a1641e9ae3bf5ed15863727
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+      Content-Length:
+      - '830'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sid": "MMfa1c9a3466ec4e0d9c305ad42090ab7f", "date_created": "Tue,
+        27 Sep 2016 23:41:18 +0000", "date_updated": "Tue, 27 Sep 2016 23:41:18 +0000",
+        "date_sent": null, "account_sid": "<twilio account sid>", "to": "+13609034504",
+        "from": "+19713402576", "messaging_service_sid": null, "body": "Sent from
+        your Twilio trial account - You so fly! From: Sponge Bob", "status": "queued",
+        "num_segments": "1", "num_media": "1", "direction": "outbound-api", "api_version":
+        "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message":
+        null, "uri": "/2010-04-01/Accounts/<twilio account sid>/Messages/MMfa1c9a3466ec4e0d9c305ad42090ab7f.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/MMfa1c9a3466ec4e0d9c305ad42090ab7f/Media.json"}}'
+    http_version: 
+  recorded_at: Tue, 27 Sep 2016 23:42:37 GMT
+recorded_with: VCR 3.0.3
