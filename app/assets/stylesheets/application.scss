@@ -1,0 +1,66 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+@font-face  {
+  font-family: 'Bombing';
+  src: url('Bombing.ttf') format('truetype');
+}
+
+.gif-display img {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Bombing', 'Serif';
+  font-size: 6em;
+  color: purple;
+}
+
+label {
+  font-family: 'Bombing', 'Serif';
+  font-size: 3em;
+  letter-spacing: 5px;
+  color: limegreen;
+}
+
+.form-control {
+  font-size: 20px;
+}
+
+.btn-primary {
+  background-color: purple;
+  width: 200px;
+  font-size: 20px;
+}
+
+.btn-primary:hover {
+  background-color: green;
+}
+
+.center {
+  text-align: center;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.btn-pad {
+  margin: 2em;
+}
+
+.flash-notice {
+  color: purple;
+  size: 3em;
+}
+
+.flash-alert {
+  color: orange;
+  size: 3em;
+}

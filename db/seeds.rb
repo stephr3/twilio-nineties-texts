@@ -10,7 +10,7 @@
 phrase_list = [
   "Don't be bugg'n!",
   "CHA-CHING!!!",
-  "Yo, those shoes are dope, girl!",
+  "Cut.It.Out.",
   "Eat my shorts!",
   "My Bad!",
   "Oh snap..",
@@ -30,55 +30,37 @@ phrase_list = [
   "Ugh, as if!",
   "Stop. Hammertime!",
   "Can't touch this!",
-  "You got it, dude!"
+  "You got it, dude!",
+  "I know you are, but what am I?",
+  "That's my name, don't wear it out!",
+  "Hey, home skillet!",
+  "Take a chill pill!",
+  "What's the 4-1-1?"
 ]
 
-phrases_list.each do |content|
+phrase_list.each do |content|
  Phrase.create( content: content )
 end
 
 gifs_list = [
-  "http://90s90s90s.tumblr.com/post/92380459244",
-  "https://giphy.com/gifs/vintage-ghost-nostalgia-32qAeAZG3iFjy",
-  "https://giphy.com/gifs/90s-cool-pAQo6sWAXmHKM"
-  https://giphy.com/gifs/90s-pizza-head-the-show-rp3kPD0XtuaZi
-  https://giphy.com/gifs/90s-whatever-the-amanda-show-58Wn3d3dTSTAc
-  https://giphy.com/gifs/uArnAJUtOmgTu
-  https://giphy.com/gifs/tmnt-teenage-mutant-ninja-turtles-3dcoLqDDjd9pC
-  https://giphy.com/gifs/gifnews-artists-on-tumblr-g7rWfnnjrAbuw
-  https://giphy.com/gifs/david-bowie-black-tie-white-noise-rPxbtwW4sPbQk
-  https://giphy.com/gifs/homealone-90s-home-alone-d2YWTOsVtuHgOHhC
-  https://giphy.com/gifs/tylermenzel-90s-commercial-tamagotchi-4LTGEdPueINFzycY1Ixq
-  https://giphy.com/gifs/happy-joy-the-splat-12Cx22zwtQfHnq
-  https://giphy.com/gifs/90s-eSQKNSmg07dHq
-  https://giphy.com/gifs/justin-timberlake-90s-t33Hisa7agcgM
-  https://giphy.com/gifs/troll-trolls-dolls-3oEjHGzq0qFxSQfsQM
-  https://giphy.com/gifs/90s-rope-chains-xPIirzBs0Rq48
-  https://giphy.com/gifs/90s-blonde-bad-UvwTujCTG9k52
-  https://giphy.com/gifs/90s-saved-by-the-bell-fashion-103h4fets0GRfq
-  https://giphy.com/gifs/90s-colorful-kRsJq6jHsA1Nu
-  https://giphy.com/gifs/90s-hello-hey-4BdaJ92wV9ciI
-  https://giphy.com/gifs/nostalgia-lambchop-lamb-chop-3rgXBumyEL9086dy48
-  https://giphy.com/gifs/90s-romy-and-micheles-high-school-reunion-mira-sorvino-P7jKxX945js6A
-  https://giphy.com/gifs/90s-david-bowie-outside-MrmwUmYWnL0WY
-  https://giphy.com/gifs/90s-baby-T3Vx6sVAXzuG4
-  https://giphy.com/gifs/90s-pump-up-the-jam-technotronic-Ztohyv6KSnFPq
-  https://giphy.com/gifs/90s-cookie-b83SxCAghtl28
-  https://giphy.com/gifs/90s-computers-OeEVCJ2UqMQNO
-  https://giphy.com/gifs/90s-work-monday-aSJV8Pjjov4LC
+  "https://media.giphy.com/media/Hp16DlTOZR4s0/giphy.gif",
+  "https://67.media.tumblr.com/f3a3838d65b41b4049f321f716d3b523/tumblr_o3a4f0KWxC1tuaz2oo1_500.gif",
+  "http://cdn-wpmsa.defymedia.com/wp-content/uploads/sites/3/2015/01/justin-timberlake-pizza-via-giphy.gif",
+  "http://media1.giphy.com/media/RfzzO0Y4SKyJy/giphy.gif",
+  "http://media1.giphy.com/media/T3Vx6sVAXzuG4/giphy.gif",
+  "https://66.media.tumblr.com/d90b62bd47ba8ef1b2b6e7d131a0ea50/tumblr_nqmicwQywL1s4vjdko1_400.gif",
+  "http://data.whicdn.com/images/213584118/large.gif",
+  "http://hellogiggles.com/wp-content/uploads/2013/04/17/david-bowie-gif.gif",
+  "https://66.media.tumblr.com/2cf57f81eaec37322ed968458d69a693/tumblr_n5tt74CXS01tsmsf0o1_400.gif",
+  "https://media.giphy.com/media/11rIergnpiYpvW/giphy.gif",
+  "https://media.giphy.com/media/Cynw6rM9ieP0A/giphy.gif",
+  "https://66.media.tumblr.com/07b1b3ba02e0653c662edb9ea0c2e94a/tumblr_nlttumCg5t1tolqmco1_500.gif",
+  "https://s-media-cache-ak0.pinimg.com/originals/68/b8/51/68b8519918fcb4b1c40baf91f3c714b0.gif",
+  "http://callollie.com/site/wp-content/uploads/2016/04/5704537069cca447347016.gif",
+  "http://orig06.deviantart.net/4e71/f/2010/072/f/1/taebo_boobs__by_the_marquis.gif"
 ]
 
 
-
-
-
-
-
-
-
-
-]
-
-gifs_list.each do |url|
- Gif.create( url: url )
+gifs_list.each do |image_url|
+ Gif.create( image_url: image_url )
 end

@@ -9,6 +9,8 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
+    @gifs = Gif.all
+    @phrases = Phrase.all
   end
 
   def create
@@ -17,6 +19,7 @@ class MessagesController < ApplicationController
       flash[:notice] = "Boo Ya! Your message was sent!"
       redirect_to messages_path
     else
+      flash[:alert] = "That was whack. Your bad. Try again."
       render 'new'
     end
   end
@@ -24,6 +27,6 @@ class MessagesController < ApplicationController
 private
 
   def message_params
-    params.require(:message).permit(:to, :from, :body, :media_url)
+    params.require(:message).permit(:to, :body, :media_url, :sender_name)
   end
 end
