@@ -9,7 +9,7 @@
 <% end %>
 <%= form_for @message do |f| %>
   <%= f.label :to, "To:" %>
-  <%= f.select :to, options_for_select([["Meaghan","5035053160"],["Stephanie", "3609034504"], ["Olivia", "8323267707"], ["Noah", "5416780529"]]), {:include_blank => 'Choose a Phone Number'}, {:class => "form-control"} %>
+  <%= f.select :to, options_for_select([["Meaghan",ENV['MEAGHAN_NUMBER']],["Stephanie", ENV['STEPH_NUMBER']], ["Olivia", ENV['OLIVIA_NUMBER']], ["Noah", ENV['NOAH_NUMBER']]]), {:include_blank => 'Choose a Phone Number'}, {:class => "form-control"} %>
   <%= f.label :sender_name, "From:" %>
   <%= f.text_field :sender_name, :class => "form-control" %>
   <%= f.label :body, "Text:" %>

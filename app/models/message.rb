@@ -6,10 +6,10 @@ private
     begin
       response = RestClient::Request.new(
       :method => :post,
-      :url => "https://api.twilio.com/2010-04-01/Accounts/AC3a77e89ec89dadb7ab5426f5ebd808a8/Messages.json",
-          :user => "AC3a77e89ec89dadb7ab5426f5ebd808a8",
-          :password => "1a3efd978883029abecde7319fa6597c",
-          :payload => { :Body => body + "From: " + sender_name,
+      :url => "https://api.twilio.com/2010-04-01/Accounts/#{ENV['TWILIO_ACCOUNT_SID']}/Messages.json",
+          :user => ENV['TWILIO_ACCOUNT_SID'],
+          :password => ENV['TWILIO_AUTH_TOKEN'],
+          :payload => { :Body => body + " From: " + sender_name,
                         :MediaUrl => media_url,
                         :To => to,
                         :From => "9713402576" }
