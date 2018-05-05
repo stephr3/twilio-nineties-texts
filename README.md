@@ -1,5 +1,5 @@
 #  Text your friends 90s slang
-## *By Stephanie Gurung and Meaghan Jones*
+## *By Stephanie Roth and Meaghan Jones*
 
 _With this application, a user can choose from a list of nineties slang phrases to send to a friend's phone. The phrase can also be accompanied by a totally phat nineties themed gif._
 
@@ -51,4 +51,4 @@ Navigate to `localhost:3000` in your browser of choice.
 License
 -------
 _This software is licensed under the MIT license._<br>
-Copyright (c) 2016 **Stephanie Gurung and Meaghan Jones**
+Copyright (c) 2016 **Stephanie Roth and Meaghan Jones**
